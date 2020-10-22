@@ -30,8 +30,8 @@ class cartServices {
                     let transporter = nodemailer.createTransport({
                         service: 'gmail',
                         auth: {
-                            user: 'ldragotechs@gmail.com',
-                            pass: 'Ldragotechs@7'
+                            user: process.env.mailid,
+                            pass: process.env.mailpassword
                         }
                     });
 

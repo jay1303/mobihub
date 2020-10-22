@@ -11,7 +11,7 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-var Publishable_Key = 'pk_test_51Hemr1KyId1Ss5GohwABbCCy93JCbisiToZwxnJuXZ2ANu5dCxbYl9FWShLYedZdn3hAIfcB8VQQR7YK0rokT1NE00JZsluZKf'
+var Publishable_Key = process.env.publickey;
 
 app.use("/", router);
 

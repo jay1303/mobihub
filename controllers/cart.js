@@ -1,6 +1,5 @@
 const CartServices = require('../services/cart');
-var Publishable_Key = 'pk_test_51Hemr1KyId1Ss5GohwABbCCy93JCbisiToZwxnJuXZ2ANu5dCxbYl9FWShLYedZdn3hAIfcB8VQQR7YK0rokT1NE00JZsluZKf'
-var Secret_Key = 'sk_test_51Hemr1KyId1Ss5Gotr2QSzVAVPVyH4lzsxyLb4ZGEtpF1MK5nR4x7CaZItIJE4ue3Xe0eY0uFskAXzRgfuovRgL800GEj0VOXA'
+var Secret_Key = process.env.privatekey;
 
 var stripe = require('stripe')(Secret_Key);
 class CartController {
